@@ -1,0 +1,13 @@
+# Part-II solution
+version: '3'
+services:
+  app:
+    image: infracloudio/csvserver:latest
+    restart: always
+    ports:
+      - 9393:9300
+    volumes:
+      - /root/csv_asg/inputFile:/csvserver/inputdata
+    environment:
+      - CSVSERVER_BORDER=Orange
+
