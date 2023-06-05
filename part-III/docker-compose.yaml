@@ -1,5 +1,5 @@
 # Part-III solution
-ersion: '3'
+version: '3'
 volumes:
    prometheus-data:
 networks:
